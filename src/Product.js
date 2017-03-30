@@ -5,14 +5,16 @@ class Product extends Component {
     const { title, description, submitterAvatarUrl, productImageUrl} = this.props.product;
 
     return (
-      <div>
-        <img
-          src={productImageUrl}
-          style={{ width: 150, height: 150 }}
-        />
+      <div style={{ flexDirection: 'column', float: 'left' }}>
+        <div style={{ float: 'left'}}>
+          <img
+            src={productImageUrl}
+            style={{ width: 150, height: 150 }}
+          />
+        </div>
         <div>
           <div>
-            <a style={{ color: '#00ffff' }}><b>{title}</b></a>
+            <a style={{ color: '#00ffff'}}><b>{title}</b></a>
             <p>Authentic renaissance actors, delivered in just two weeks.</p>
           </div>
           <div>
