@@ -15,8 +15,8 @@ const products = [
     description: 'On-demand sand castle construction expertise.',
     url: '#',
     votes: 'generateVoteCount()',
-    submitterAvatarUrl: 'http://www.customizetrip.com/images/avatar.jpeg',
-    productImageUrl: 'https://github.com/pzatorski/fullstack-react-code/blob/master/voting_app/images/products/image-aqua.png?raw=true'
+    submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
+    productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image-aqua.png?raw=true'
   },
   {
     id: 2,
@@ -24,8 +24,8 @@ const products = [
     description: 'On-demand sand castle construction expertise.',
     url: '#',
     votes: 'generateVoteCount()',
-    submitterAvatarUrl: 'http://www.customizetrip.com/images/avatar.jpeg',
-    productImageUrl: 'https://github.com/pzatorski/fullstack-react-code/blob/master/voting_app/images/products/image-rose.png?raw=true'
+    submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
+    productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image-rose.png?raw=true'
   },
   {
     id: 3,
@@ -33,8 +33,8 @@ const products = [
     description: 'On-demand sand castle construction expertise.',
     url: '#',
     votes: 'generateVoteCount()',
-    submitterAvatarUrl: 'http://www.customizetrip.com/images/avatar.jpeg',
-    productImageUrl: 'https://github.com/pzatorski/fullstack-react-code/blob/master/voting_app/images/products/image-steel.png?raw=true'
+    submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
+    productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image-yellow.png?raw=true'
   },
   {
     id: 4,
@@ -42,8 +42,8 @@ const products = [
     description: 'On-demand sand castle construction expertise.',
     url: '#',
     votes: 'generateVoteCount()',
-    submitterAvatarUrl: 'http://www.customizetrip.com/images/avatar.jpeg',
-    productImageUrl: 'https://github.com/pzatorski/fullstack-react-code/blob/master/voting_app/images/products/image-yellow.png?raw=true'
+    submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
+    productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image-steel.png?raw=true'
   },
   {
     id: 5,
@@ -51,8 +51,8 @@ const products = [
     description: 'On-demand sand castle construction expertise.',
     url: '#',
     votes: 'generateVoteCount()',
-    submitterAvatarUrl: 'http://www.customizetrip.com/images/avatar.jpeg',
-    productImageUrl: 'https://github.com/pzatorski/fullstack-react-code/blob/master/voting_app/images/products/image.png?raw=true'
+    submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
+    productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image.png?raw=true'
   }
 ];
 
