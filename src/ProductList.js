@@ -43,7 +43,7 @@ class ProductList extends Component {
     });
 
     return (
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
         {productList}
       </div>
     );

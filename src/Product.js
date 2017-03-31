@@ -5,14 +5,14 @@ class Product extends Component {
     const { title, description, submitterAvatarUrl, productImageUrl} = this.props.product;
 
     return (
-      <div style={{ flexDirection: 'column', float: 'left' }}>
-        <div style={{ float: 'left'}}>
+      <div style={{ padding: 5, display: 'flex', flexDirection: 'row' }}>
+        <div>
           <img
             src={productImageUrl}
             style={{ width: 150, height: 150 }}
           />
         </div>
-        <div>
+        <div style={{ padding: 5}}>
           <div>
             <a style={{ color: '#00ffff'}}><b>{title}</b></a>
             <p>Authentic renaissance actors, delivered in just two weeks.</p>
