@@ -38,8 +38,17 @@ class ProductList extends Component {
     //   return <Product key={i} product={product} />;
     // })
 
-    const productList = products.map((product, index) => {
-      return <Product key={index} product={product} />;
+    const productList = products.map((product) => {
+      return <Product
+        key={'product-' + product.id}
+        id={product.id}
+        title={product.title}
+        description={product.description}
+        url={product.url}
+        votes={product.votes}
+        submitterAvatarUrl={product.submitterAvatarUrl}
+        productImageUrl={product.productImageUrl}
+        />;
     });
 
     return (
