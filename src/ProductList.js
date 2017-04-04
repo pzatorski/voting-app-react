@@ -51,6 +51,7 @@ class ProductList extends Component {
         votes={product.votes}
         submitterAvatarUrl={product.submitterAvatarUrl}
         productImageUrl={product.productImageUrl}
+        arrow={product.arrow}
         />;
     });
 

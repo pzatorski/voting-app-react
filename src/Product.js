@@ -13,15 +13,17 @@ class Product extends Component {
           />
         </div>
         <div style={{ padding: 5 }}>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
             <a>
               <img
-                src='https://github.com/pzatorski/voting-app-react/blob/master/images/voting%20arrow/up-arrow-circle.png?raw=true'
-                style={{ width: 30, height: 30, borderRadius: '50%', padding: 2 }}
+                src={this.props.arrow}
+                style={{ width: 30, height: 30, borderRadius: '50%' }}
               />
             </a>
-            {this.props.votes}
+            <a style={{ margin: 10, fontWeight: 'bold' }}>{this.props.votes}</a>
+          </div>
           <div>
-            <a style={{ color: '#00ffff'}}><b>{this.props.title}</b></a>
+            <a style={{ color: 'black'}}><b>{this.props.title}</b></a>
             <p>{this.props.description}</p>
           </div>
           <div>
