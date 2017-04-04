@@ -40,7 +40,6 @@ class ProductList extends Component {
     const productsvote = products.sort((a, b) => (
       b.votes - a.votes
     ));
-    console.log(productsvote)
 
     const productComponents = products.map((product) => {
       return <Product

@@ -14,7 +14,7 @@ const products = [
     title: 'Yellow Pail',
     description: 'On-demand sand castle construction expertise.',
     url: '#',
-    votes: 'generateVoteCount()',
+    votes: 21,
     submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
     productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image-aqua.png?raw=true'
   },
@@ -23,7 +23,7 @@ const products = [
     title: 'Blue Moon',
     description: 'On-demand sand castle construction expertise.',
     url: '#',
-    votes: 'generateVoteCount()',
+    votes: 25,
     submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
     productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image-rose.png?raw=true'
   },
@@ -32,7 +32,7 @@ const products = [
     title: 'Red Moon',
     description: 'On-demand sand castle construction expertise.',
     url: '#',
-    votes: 'generateVoteCount()',
+    votes: 38,
     submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
     productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image-yellow.png?raw=true'
   },
@@ -41,7 +41,7 @@ const products = [
     title: 'Green Moon',
     description: 'On-demand sand castle construction expertise.',
     url: '#',
-    votes: 'generateVoteCount()',
+    votes: 10,
     submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
     productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image-steel.png?raw=true'
   },
@@ -50,7 +50,7 @@ const products = [
     title: 'Black Moon',
     description: 'On-demand sand castle construction expertise.',
     url: '#',
-    votes: 'generateVoteCount()',
+    votes: 17,
     submitterAvatarUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/avatars/icon.jpg?raw=true',
     productImageUrl: 'https://github.com/pzatorski/voting-app-react/blob/master/images/products/image.png?raw=true'
   }
