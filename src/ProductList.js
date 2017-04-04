@@ -4,21 +4,21 @@ import Product from './Product';
 class ProductList extends Component {
 
   // renderList = (products) => {
-  //   const productList = products.map((product, index) => {
+  //   const productComponents = products.map((product, index) => {
   //     return <Product key={index} product={product} />;
   //   });
   //
-  //   return productList;
+  //   return productComponents;
   // }
 
   render() {
     const { products } = this.props;
 
-    // const productList = products.map(function (product, index) {
+    // const productComponents = products.map(function (product, index) {
     //   return <Product product={product} />;
     // });
 
-    // const productList = products.map((product, index) => (
+    // const productComponents = products.map((product, index) => (
     //   <Product key={index} product={product} />
     // ));
 
@@ -37,8 +37,12 @@ class ProductList extends Component {
     //   const product = foo[elem];
     //   return <Product key={i} product={product} />;
     // })
+    const productsvote = products.sort((a, b) => (
+      b.votes - a.votes
+    ));
+    console.log(productsvote)
 
-    const productList = products.map((product) => {
+    const productComponents = products.map((product) => {
       return <Product
         key={'product-' + product.id}
         id={product.id}
@@ -53,10 +57,12 @@ class ProductList extends Component {
 
     return (
       <div style={{ display: 'flex', flexDirection: 'column' }}>
-        {productList}
+        {productComponents}
       </div>
     );
   }
 }
+
+
 
 export default ProductList;
