@@ -3,6 +3,9 @@ import Product from './Product';
 
 class ProductList extends Component {
 
+  handleProductUpVote (productId) {
+    console.log(productId + ' was upvoted')
+  }
   // renderList = (products) => {
   //   const productComponents = products.map((product, index) => {
   //     return <Product key={index} product={product} />;
@@ -10,33 +13,33 @@ class ProductList extends Component {
   //
   //   return productComponents;
   // }
+  // const productComponents = products.map(function (product, index) {
+  //   return <Product product={product} />;
+  // });
+
+  // const productComponents = products.map((product, index) => (
+  //   <Product key={index} product={product} />
+  // ));
+
+  // const foo = {
+  //   1: {
+  //     id: 1,
+  //     name: 'pat'
+  //   },
+  //   232432: {
+  //     id: 232432,
+  //     name: 'mat'
+  //   }
+  // }
+  //
+  // const bar = Object.keys(foo).map((elem, i) => {
+  //   const product = foo[elem];
+  //   return <Product key={i} product={product} />;
+  // })
 
   render() {
     const { products } = this.props;
 
-    // const productComponents = products.map(function (product, index) {
-    //   return <Product product={product} />;
-    // });
-
-    // const productComponents = products.map((product, index) => (
-    //   <Product key={index} product={product} />
-    // ));
-
-    // const foo = {
-    //   1: {
-    //     id: 1,
-    //     name: 'pat'
-    //   },
-    //   232432: {
-    //     id: 232432,
-    //     name: 'mat'
-    //   }
-    // }
-    //
-    // const bar = Object.keys(foo).map((elem, i) => {
-    //   const product = foo[elem];
-    //   return <Product key={i} product={product} />;
-    // })
     const productsvote = products.sort((a, b) => (
       b.votes - a.votes
     ));
@@ -52,6 +55,7 @@ class ProductList extends Component {
         submitterAvatarUrl={product.submitterAvatarUrl}
         productImageUrl={product.productImageUrl}
         arrow={product.arrow}
+        onVote={this.handleProductUpVote}
         />;
     });
 

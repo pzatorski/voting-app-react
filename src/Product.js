@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 
 class Product extends Component {
+
+  constructor(props) {
+      super(props);
+      this.handleUpVote = this.handleUpVote.bind(this);
+    }
+
+  handleUpVote () {
+    this.props.onVote(this.props.id)
+  }
+
   render() {
     // const { title, description, submitterAvatarUrl, productImageUrl} = this.props.product;
 
@@ -14,7 +24,7 @@ class Product extends Component {
         </div>
         <div style={{ padding: 5 }}>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <a>
+            <a onClick={this.handleUpVote}>
               <img
                 src={this.props.arrow}
                 style={{ width: 30, height: 30, borderRadius: '50%' }}
