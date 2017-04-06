@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
 class Product extends Component {
+  constructor() {
+    super();
+    this.handleUpVote = this.handleUpVote.bind(this);
+  }
 
-  constructor(props) {
-      super(props);
-      this.handleUpVote = this.handleUpVote.bind(this);
-    }
-
-  handleUpVote () {
-    this.props.onVote(this.props.id)
+  handleUpVote() {
+    this.props.onVote(this.props.id);
   }
 
   render() {
@@ -33,7 +32,7 @@ class Product extends Component {
             <a style={{ margin: 10, fontWeight: 'bold' }}>{this.props.votes}</a>
           </div>
           <div>
-            <a style={{ color: 'black'}}><b>{this.props.title}</b></a>
+            <a style={{ color: 'black' }}><b>{this.props.title}</b></a>
             <p>{this.props.description}</p>
           </div>
           <div>
@@ -52,7 +51,7 @@ class Product extends Component {
 
 Product.propTypes = {
   product: React.PropTypes.shape({
-    title: React.PropTypes.string.isRequired,
+    title: React.PropTypes.string.isRequired
   })
 };
 

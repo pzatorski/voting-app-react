@@ -2,11 +2,54 @@ import React, { Component } from 'react';
 import ProductList from './ProductList';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      products: products
+    }
+  }
+
+
+  handleUpvote = (id) => {
+    const { products } = this.state;
+
+    const newProducts = products.map((product, index) => {
+      if (product.id === id) {
+
+        // return {
+        //   ...product,
+        //   votes: product.votes + 1
+        // };
+
+        return {
+          id: product.id,
+          title: product.title,
+          description: product.description,
+          url: product.url,
+          votes: product.votes + 1,
+          submitterAvatarUrl: product.submitterAvatarUrl,
+          productImageUrl: product.productImageUrl,
+          arrow: product.arrow
+        };
+      }
+
+      return product;
+    });
+
+    this.setState({
+      products: newProducts
+    });
+  }
+
   render() {
-    return <ProductList products={products} />;
+
+    return <ProductList products={this.state.products} onUpvote={this.handleUpvote} />;
   }
 }
 
+
+const numbers = [1, 2, 3, 4, 5, 6];
 
 const products = [
   {

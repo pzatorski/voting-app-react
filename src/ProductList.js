@@ -45,18 +45,21 @@ class ProductList extends Component {
     ));
 
     const productComponents = products.map((product) => {
-      return <Product
-        key={'product-' + product.id}
-        id={product.id}
-        title={product.title}
-        description={product.description}
-        url={product.url}
-        votes={product.votes}
-        submitterAvatarUrl={product.submitterAvatarUrl}
-        productImageUrl={product.productImageUrl}
-        arrow={product.arrow}
-        onVote={this.handleProductUpVote}
-        />;
+
+      return (
+        <Product
+          key={'product-' + product.id}
+          id={product.id}
+          title={product.title}
+          description={product.description}
+          url={product.url}
+          votes={product.votes}
+          submitterAvatarUrl={product.submitterAvatarUrl}
+          productImageUrl={product.productImageUrl}
+          arrow={product.arrow}
+          onVote={this.props.onUpvote}
+        />
+      );
     });
 
     return (
